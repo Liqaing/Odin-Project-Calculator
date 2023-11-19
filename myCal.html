@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            padding: 20px;
+            background: #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .container div {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 5px;
+        }
+
+        input[type="text"] {
+            width: 20.5em;
+            background: #ffffff;
+            height: 4em;
+        }
+        button {
+            font-size: 1.8em;
+            width: 2.3em;
+            height: 2.3em;
+        }
+
+        button:hover {
+            box-shadow: 0 0 25px aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <input type="text" readonly>
+        <div>
+            <button>C</button>
+            <button>Del</button>
+            <button>⌫</button>
+            <button>=</button>
+            
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+            
+        </div>
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button>
+            
+        </div>
+        
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+        </div>
+
+        <div>
+            <button>.</button>
+            <button>0</button>
+            <button>-/+</button>
+            <button>+</button>
+        </div>
+        <div>
+            <button>(</button>
+            <button>)</button>     
+            <button>√</button>
+            <button>%</button>
+            
+        </div>
+    </div>
+</body>
+</html>
