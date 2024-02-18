@@ -2,8 +2,8 @@ const convertToNum = function(value) {
     try {
         value = value * 1;
     }
-    catch {
-        console.log(`${value} is not a number`)
+    catch (error) {
+        console.log(error);
         value = 0;
     }
     return value;
@@ -75,6 +75,8 @@ const displayValue = function(value) {
     const calculatorBox = document.querySelector("input"); 
     
     // Format and display to inpubox
+    // const num = convertToNum(calculatorBox.value += value)
+    // console.log(num.toLocaleString())
     calculatorBox.value = calculatorBox.value += value;
 
     // Scroll to left ot display latest input number
