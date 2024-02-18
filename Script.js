@@ -37,3 +37,12 @@ const operate = function(num1, num2, operate) {
     }
     return result;
 }
+
+const calculatorBox = document.querySelector("input"); 
+const buttonContainer = document.querySelector(".container");
+buttonContainer.addEventListener("click", (e) => {
+    // Display value of element on screen
+    if (e.target.classList.contains("value")) {
+        calculatorBox.value += e.target.textContent;
+    }
+});
