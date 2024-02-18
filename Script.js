@@ -44,5 +44,8 @@ buttonContainer.addEventListener("click", (e) => {
     // Display value of element on screen
     if (e.target.classList.contains("value")) {
         calculatorBox.value += e.target.textContent;
+
+        // Scroll to left ot display latest input number
+        calculatorBox.scrollLeft = calculatorBox.scrollWidth;
     }
 });
