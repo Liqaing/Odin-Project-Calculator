@@ -27,7 +27,7 @@ input[type="text"] {
     background: #ffffff;
     height: 3em;
     text-align: right;
-    font-size: 1.45em;
+    font-size: 1.4em;
     overflow: hidden;
     text-overflow: ellipsis;
 }

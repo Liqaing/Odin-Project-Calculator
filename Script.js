@@ -164,6 +164,7 @@ buttonContainer.addEventListener("click", (e) => {
         switch(specialInputOperator) {
             case 'C':
                 clearAll();
+                result = 0;
                 break;
             case '⌫':
                 if (inputNum2) {
