@@ -38,14 +38,21 @@ const operate = function(num1, num2, operate) {
     return result;
 }
 
+let inputNum1;
+
 const calculatorBox = document.querySelector("input"); 
 const buttonContainer = document.querySelector(".container");
 buttonContainer.addEventListener("click", (e) => {
-    // Display value of element on screen
+    
+    // User click on number value
     if (e.target.classList.contains("value")) {
+        // Display to inpubox
         calculatorBox.value += e.target.textContent;
 
         // Scroll to left ot display latest input number
         calculatorBox.scrollLeft = calculatorBox.scrollWidth;
+
+        // Store input value in a variable
+        inputNum1 = calculatorBox.value;
     }
 });
