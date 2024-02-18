@@ -123,6 +123,10 @@ buttonContainer.addEventListener("click", (e) => {
     
     // User click on number value
     if (e.target.classList.contains("value")) {
+        if (result) {
+            clearDisplay();
+            result = 0;
+        }
         displayValue(e.target.textContent);
     }
     // User click on operator
@@ -130,6 +134,7 @@ buttonContainer.addEventListener("click", (e) => {
 
         if (result) {
             clearDisplay();
+            result = 0;
         }
 
         // Store input value in a variable
